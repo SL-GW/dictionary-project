@@ -2,5 +2,13 @@ import React from "react";
 
 export default function Results(props) {
   console.log(props.results);
-  return <div className="Results"></div>;
+  if (props.results) {
+    return (
+      <div className="Results">
+        <h2>{props.results.definition}</h2>
+      </div>
+    );
+  } else {
+    return null;
+  }
 }
