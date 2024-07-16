@@ -1,4 +1,5 @@
 import React from "react";
+import Meaning from "./Meaning";
 
 export default function Results(props) {
   console.log(props.results);
@@ -7,27 +8,13 @@ export default function Results(props) {
       props.results;
     return (
       <div className="Results">
-        <div>
-          <h3>{partOfSpeech}</h3>
-          <p>
-            <strong>Definition:</strong> {definition}
-          </p>
-          {example && (
-            <p>
-              <strong>Example:</strong> {example}
-            </p>
-          )}
-          {synonyms && synonyms.length > 0 && (
-            <p>
-              <strong>Synonyms:</strong> {synonyms.join(", ")}
-            </p>
-          )}
-          {antonyms && antonyms.length > 0 && (
-            <p>
-              <strong>Antonyms:</strong> {antonyms.join(", ")}
-            </p>
-          )}
-        </div>
+        <Meaning
+          partOfSpeech={partOfSpeech}
+          definition={definition}
+          example={example}
+          synonyms={synonyms}
+          antonyms={antonyms}
+        />
       </div>
     );
   } else {
