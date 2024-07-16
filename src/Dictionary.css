@@ -1,5 +1,10 @@
 .Dictionary input {
-  font-size: 20px;
+  border: 2px solid #303841;
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: #303841;
+  font-size: 25px;
   line-height: 1.5;
-  width: 400px;
+  padding: 5px 10px;
+  width: 500px;
 }

@@ -1,20 +1,20 @@
 .App {
-  font-family: "Courier Prime", monospace;
-  font-weight: 400;
-  font-style: normal;
   color: #303841;
+  font-family: "Courier Prime", monospace;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .App h1 {
-  font-size: 70px;
+  font-size: 80px;
   font-weight: 600;
+  margin: 30px 0 50px 0;
   text-align: center;
-  margin: 30px 0;
 }
 
 .App footer {
-  text-align: center;
   margin: 60px 0;
+  text-align: center;
 }
 
 .App a {
